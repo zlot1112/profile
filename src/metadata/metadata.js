@@ -1,13 +1,19 @@
 module.exports = {
-  name: 'William Shakespeare',
-  title: 'Poet, playwright and actor',
+  name: '이진규',
+  title: '백엔드 · 프론트 · 데브옵스 엔지니어',
   facts: {
-    'Residence': 'London',
-    'Homepage': `<a href="https://en.wikipedia.org/wiki/William_Shakespeare">
-                  <span class="print">https://en.wikipedia.org/wiki/William_Shakespeare</span>
-                  <span class="screen">wiki</span>
+    'Email': '<a href="mailto:zlot1112@gmail.com">zlot1112@gmail.com</a>',
+    'Phone': '+82 10-6317-3488',
+  },
+  channels: {
+    'Github': `<a href="https://github.com/zlot1112">
+                  <span class="print">https://github.com/zlot1112</span>
+                  <span class="screen">https://github.com/zlot1112</span>
                 </a>`,
-    'Email': '<a href="mailto:wil64@yahoo.com">wil64@yahoo.com</a>'
+    'facebook': `<a href="https://facebook.com/leeggung">
+                  <span class="print">https://facebook.com/leeggung</span>
+                  <span class="screen">https://facebook.com/leeggung</span>
+                </a>`,
   },
   skills: [
     ['Comedy', '++++'],
@@ -49,20 +55,64 @@ In Verona, Italy, two families, the Montagues and the Capulets, are in the midst
 `
     }
   ],
-  experience: [
+  edus: [
     {
-      header: 'Performance',
-      skills: ['theater', 'play'],
-      contents: `
-Thousands of performances of my plays have been staged since the end of the 16th century. Many of my greatest plays were performed by the Lord Chamberlain's Men and King's Men acting companies at the [Globe](https://en.wikipedia.org/wiki/Globe_Theatre) and Blackfriars Theatres.
-`
+      date: '2011.05 - 2012.02',
+      name: '학점은행제',
+      major: '컴퓨터공학'
     },
     {
-      header: 'Poetry',
-      skills: ['poetry', 'erotic'],
-      contents: `
-In 1593 and 1594, when the theatres were closed because of plague, I published two narrative poems on sexual themes, Venus and Adonis and The Rape of Lucrece. He dedicated them to Henry Wriothesley, Earl of Southampton.
-`
+      date: '2005.03 - 2011.02',
+      name: '신흥전문대학(3년)',
+      major: '소프트웨어개발'
+    }
+  ],
+  cert: [
+    {
+      date: '2022.01 ~ 2025.01',
+      name: 'CKAD (Certified Kubernetes Application Developer)',
+      major: 'linux foundation'
+    },
+    {
+      date: '2021.12 ~ 2023.06',
+      name: 'Oracle Cloud Database Services 2021 Certified Specialist',
+      major: 'Oracle'
+    },
+    {
+      date: '2021.12 ~ 2023.06',
+      name: 'Oracle Cloud Database Migration and Integration Specialist',
+      major: 'Oracle'
+    },
+    {
+      date: '2021.12 ~ 2023.06',
+      name: 'ORACLE Certified Architect Associate',
+      major: 'Oracle'
+    },
+    {
+      date: '2021.12 ~ 2023.06',
+      name: 'ORACLE Certified Operations Associate',
+      major: 'Oracle'
+    },
+    {
+      date: '2021.11 ~ 2024.11',
+      name: 'CKA (Certified Kubernetes Administrator)',
+      major: 'linux foundation'
+    },
+    {
+      date: '2021.06 ~ 2024.06',
+      name: 'AWS Certified Data Analytics - Specialty',
+      major: 'AWS'
+    },
+    {
+      date: '2010.08',
+      name: '정보처리기사,산업기사',
+      major: '한국산업인력공단',
+      link: ''
+    },
+    {
+      date: '2010.06',
+      name: '리눅스마스터',
+      major: '한국정보통신산업협회'
     }
   ]
 };

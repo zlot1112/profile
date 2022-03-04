@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ name }}. {{ title }}</title>
+    <title>{{ name }} Resume</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,20 +12,26 @@
 <body>
 <div class="container page">
     <div class="row">
-        <div class="col-md-6 col-print-6">
+        <div class="col-md-3 col-print-6">
+            <img src="/my.jpg" alt="My" style="width:80%; height:80%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover">
+        </div>
+        <div class="col-md-5 col-print-6">
             <h1>{{ name }}<br/>{{ title }}</h1>
             <p>
-                <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
-            </p>
-            <p>
-                <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version</a></span>
-                <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
-                    class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
+                SpringBoot 기반의 백엔드<br/>Vue.js 기반의 프론트<br/>AWS 환경 기반의 데브옵스
             </p>
         </div>
-        <div class="col-md-6 col-print-6">
+        <div class="col-md-4 col-print-6">
+            <dl class="row" style="color: chocolate">Contact</dl>
             <dl class="row">
                 {{#each facts}}
+                <dt class="col-md-3">{{ @key }}</dt>
+                <dd class="col-md-9">{{{ this }}}</dd>
+                {{/each}}
+            </dl>
+            <dl class="row" style="color: chocolate">Channel</dl>
+            <dl class="row">
+                {{#each channels}}
                 <dt class="col-md-3">{{ @key }}</dt>
                 <dd class="col-md-9">{{{ this }}}</dd>
                 {{/each}}
@@ -33,26 +39,17 @@
         </div>
     </div>
 
-    <h3 class="screen">Skills</h3>
-    <div class="row mb-4">
-        {{#each skills}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-            <small>{{ this.[0] }}</small>
-        </div>
-        <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this.[1] }}
-        </div>
-        {{/each}}
-    </div>
-
+    <h2 style="color: chocolate">Introduce</h2>
     <p>
-        English poet, playwright and actor, widely regarded as the greatest writer in the English language
-        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
-        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
-        two long narrative poems and a few other verses, some of uncertain authorship.
+        만 11년 개발자로, 주로 대기업 SI/SM 업무를 담당하였습니다.<br/>
+        회원수 1,500만명 이상의 인증서버, 월 매출 100억 단위의 결제시스템, 크라우드펀딩, 커머스등 다양한 서비스들을 운영/개발 하였습니다.<br/>
+        현재는 프로젝트 내 CI/CD 구축 및 설계, 웹 개발 등에 참여하고 있으며, 프로젝트내 PL 역할을 하고 있습니다.<br/>
+        <br/>
+        최근에는 k8s와 terraform에 관심이 있어 스터디 중이며, 현 프로젝트내 적용이 목표입니다.
     </p>
 
-    <h2>Professional Experience</h2>
+
+    <h2 style="color: chocolate">Professional Experience</h2>
     {{#each plays}}
     <div class="card mb-4">
         <div class="card-body">
@@ -70,26 +67,53 @@
     </div>
     {{/each}}
 
-    <h2>Education</h2>
-    <p>King Edward VI Grammar School in Stratford-upon-Avon [1571 - 1578]</p>
+    <h2 style="color: chocolate">Education</h2>
+    {{#each edus}}
+    <p>[{{ date }}] {{ name }} - {{ major }}</p>
+    {{/each}}
 
-    <h2>Additional Experience</h2>
-
-    {{#each experience}}
-    <div class="card mt-4">
-        <div class="card-body">
-            <div class="mb-2"><strong>{{ header }}</strong></div>
-
-            {{{markdown contents }}}
-
-            <div>
-                {{#each skills }}
-                <span class="badge badge-primary">{{ this }}</span>
-                {{/each}}
-            </div>
+    <h2 style="color: chocolate">Certificate</h2>
+    <div class="row">
+        <div class="col-md-12 col-print-2">
+            <dl class="row">
+                <dt class="col-md-1"><img src="/badge/AWS-DataAnalytics-Specialty-2020.png" alt="AWSDS" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/cka_from_cncfsite__281_29.png" alt="CKA" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/ckad_from_cncfsite.png" alt="CKAD" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/101_Oracle_Cloud_Infrastructure_Cloud_Operations_Associate.png" alt="OA" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/103_Oracle_Cloud_Infrastructure_Architect_Associate.png" alt="AA" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/107_Oracle_Cloud_Database_Services.png" alt="DS" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+                <dt class="col-md-1"><img src="/badge/108_Oracle_Cloud_Database_Migration_and_Integration.png" alt="DMI" style="width:100%; height:100%; display: block; margin: 0 auto;  overflow: hidden; object-fit: cover"></dt>
+            </dl>
         </div>
     </div>
+    {{#each cert}}
+    <p>[{{ date }}] {{ name }} - {{ major }}</p>
     {{/each}}
+    <p></p>
+    <h3 class="screen" style="color: chocolate">Skills</h3>
+    <div class="row mb-4">
+        {{#each skills}}
+        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
+            <small>{{ this.[0] }}</small>
+        </div>
+        <div class="col-print-1 col-3 col-md-2 col-lg-1">
+            {{ this.[1] }}
+        </div>
+        {{/each}}
+    </div>
+
+    <p>
+        English poet, playwright and actor, widely regarded as the greatest writer in the English language
+        and the world's pre-eminent dramatist. Often called England's national poet and the "Bard of Avon".
+        My extant work is including collaborations, consist of approximately 38 plays, 154 sonnets,
+        two long narrative poems and a few other verses, some of uncertain authorship.
+    </p>
+    <span class="screen"><a href="{{ pdfFileName }}"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>Download PDF version</a></span>
+    <span class="print">The online version is available at <a href="{{ baseUrl }}" class="text-nowrap"><i
+        class="fa fa-github" aria-hidden="true"></i>{{ baseUrl }}</a></span>
+    <p style="text-align: right">
+    <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
+    </p>
 </div>
 </body>
 </html>

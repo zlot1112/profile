@@ -45,7 +45,7 @@
         회원 수 1,500만명 이상의 인증 서버, 월 매출 100억 단위의 결제 시스템, 크라우드펀딩, 커머스 등 다양한 서비스들을 운영/개발하였습니다.<br/>
         현재는 프로젝트 내 CI/CD 구축 및 설계, 웹 개발 등에 참여하고 있으며, 프로젝트 내 PL 역할을 하고 있습니다.<br/>
         최근에는 k8s와 terraform에 관심이 있어 공부 중이며, 프로덕트 환경 적용이 목표입니다.<br />
-        <br />
+        <br/>
         항상 어제보다 더 나은 서비스와 제가 되기 위해 노력하는 개발자입니다.
         <br/>
     </p>
@@ -75,7 +75,7 @@
             <div class="card mb-10">
                 {{#each projects}}
                 <div class="card-body">
-                    <h3>{{ name }}</h3>
+                    <h3>{{{ markdown name }}}</h3>
                     <p class="text-muted">{{date}}</p>
                     {{{markdown contents }}}
                     <div>
@@ -85,16 +85,19 @@
                         {{#each badges.frontend }}
                         <span class="badge badge-info">{{ this }}</span>
                         {{/each}}
-                        {{#each badges.etc }}
+                        {{#each badges.db }}
                         <span class="badge badge-warning">{{ this }}</span>
+                        {{/each}}
+                        {{#each badges.etc }}
+                        <span class="badge badge-secondary">{{ this }}</span>
                         {{/each}}
                     </div>
                 </div>
                 {{/each}}
-                <br/>
             </div>
         </div>
     </div>
+    <br/>
     {{/each}}
 
     <h2 style="color: chocolate">Education</h2>

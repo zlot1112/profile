@@ -16,18 +16,18 @@ module.exports = {
                 </a>`,
   },
   skills: [
-    ['Comedy', '++++'],
-    ['Love', '++++'],
-    ['Theater', '++++'],
-    ['Tragedy', '++++'],
-    ['Poetry', '++++'],
-    ['Erotic', '+++'],
-    ['Sonnets', '++++'],
-    ['Plays', '++++'],
-    ['Writing', '++++'],
-    ['Directing', '+++'],
-    ['Literature', '++++'],
-    ['Influence', '++++'],
+    ['Spring', '+++'],
+    ['Java', '+++'],
+    ['git', '+++'],
+    ['CI/CD', '+++'],
+    ['RDB', '+++'],
+    ['Python', '++'],
+    ['vue.js', '++'],
+    ['javascript', '++'],
+    ['terraform', '+'],
+    ['aws', '+'],
+    ['k8s', '+'],
+    ['elk', '+'],
   ],
   plays: [
     {
@@ -39,7 +39,7 @@ module.exports = {
           name: '삼성전자 글로벌 권리지원 개발/운영',
           date: '2021.01 ~ 현재 / PL',
           badges: {
-            backend: ['Spring framework', 'Java'],
+            backend: ['Spring', 'Java'],
             frontend: ['Javascript','vue.js'],
             db: ['Mysql', 'Mybatis', 'ElasticSearch', 'Logstash', 'kibana'],
             etc: ['AWS' ,'git', 'Tomcat', 'Nginx']
@@ -48,8 +48,8 @@ module.exports = {
             `
 * 관리자 웹페이지 개발  
   - 대용량(100만건이상) Excel Download 속도개선 및 OOM 이슈 해결          
-  - MySQL SlowQuery 튜닝 및 Daily Batch 성능개선   
-  - AWS SDK 보안개선(Accesskey > EC2 instance profile)
+  - MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)   
+  - AWS SDK 사용 보안개선(Access Key 방식 제거)
 * Lagacy 배포시스템 개선   
   - CircleCI + AWS CodeDeploy CI/CD 설계 및 구축
   - GIT flow 전략수립 및 적용
@@ -78,7 +78,7 @@ module.exports = {
             `
 - 민팃+바른폰 프로젝트 통합 구축 설계
 - Backend 언어 변경(Java to Python) 및 프로젝트 통합  
-- 웹페이지 통합 및 개발   
+- jquery to vue.js 웹페이지 통합 및 개발   
             `
         },
         {
@@ -92,7 +92,7 @@ module.exports = {
           },
           contents:
             `
-- 주) Google, Apple, Onestore 등 결제 REST API 운영/개발   
+- Google(주), Apple, Onestore 등 결제 REST API 운영/개발   
 - 신규 관리자 사이트 프로젝트 설계 및 개발   
 - 청구서/결제/SMS 등 레거시 연동 API 운영/개발   
 - 결제 일/월 대사 File 다운로드 배치 개발         
@@ -145,7 +145,7 @@ module.exports = {
             `
         },
         {
-          name: 'SKT [T아이디 채널포탈](https://chp.skt-id.co.kr/) 고도화',
+          name: 'SK텔레콤 [T아이디 채널포탈](https://chp.skt-id.co.kr/) 고도화',
           date: '2018.10 ~ 2019.02',
           badges: {
             backend: ['Spring boot', 'Java'],
@@ -159,7 +159,7 @@ module.exports = {
             `
         },
         {
-          name: 'SKT [T아이디](https://www.skt-id.co.kr) Monitoring System 개발',
+          name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) Monitoring System 개발',
           date: '2018.04 ~ 2018.10',
           badges: {
             backend: ['Spring boot', 'Java'],
@@ -174,7 +174,7 @@ module.exports = {
             `
         },
         {
-          name: 'SKT [T아이디](https://www.skt-id.co.kr) IMDG 데이터 검증 및 DB migration',
+          name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) IMDG 데이터 검증 및 DB migration',
           date: '2017.11 ~ 2018.03',
           badges: {
             backend: ['Spring', 'Java'],
@@ -189,7 +189,7 @@ module.exports = {
             `
         },
         {
-          name: 'SKT [T아이디](https://www.skt-id.co.kr) 운영/개발',
+          name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) 운영/개발',
           date: '2016.08 ~ 2017.10',
           badges: {
             backend: ['Spring', 'Java'],
@@ -233,7 +233,7 @@ module.exports = {
           name: 'SK그룹 [모바일 서비스 플랫폼](https://m.toktok.sk.com/) 운영/개발',
           date: '2011.09  ~ 2015.08',
           badges: {
-            backend: ['Spring framework', 'Java'],
+            backend: ['Spring', 'Java'],
             frontend: ['Javascript','Jsp', 'Jquery'],
             db: ['Mysql', 'ibatis'],
             etc: ['svn', 'Apache', 'Tomcat']

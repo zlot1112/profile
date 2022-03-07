@@ -50,18 +50,6 @@
         <br/>
     </p>
 
-    <h3 class="screen" style="color: chocolate">Skills</h3>
-    <div class="row mb-4">
-        {{#each skills}}
-        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
-            <small>{{ this.[0] }}</small>
-        </div>
-        <div class="col-print-1 col-3 col-md-2 col-lg-1">
-            {{ this.[1] }}
-        </div>
-        {{/each}}
-    </div>
-
     <h2 style="color: chocolate">Experience</h2>
     {{#each plays}}
 
@@ -123,7 +111,26 @@
     <p>[{{ date }}] {{ name }} - {{ major }}</p>
     {{/each}}
     <p></p>
+    <h2 class="screen" style="color: chocolate">Skills</h2>
+
+    <div class="row mb-4">
+        {{#each skills}}
+        <div class="col-print-1 col-3 col-md-2 col-lg-1 text-right">
+            <small>{{ this.[0] }}</small>
+        </div>
+        <div class="col-print-1 col-3 col-md-2 col-lg-1">
+            {{ this.[1] }}
+        </div>
+        {{/each}}
+    </div>
+    <p style="text-align: right">
+        +   : 기 작성된 코드 활용 가능, 기초 문법 및 코드 이해 가능, 협업을 통한 Coding 가능<br/>
+        ++  : framework 설계 및 개발 등 신규 개발, 문법 응용, 코드 Rafactoring, 단독 Coding 가능<br/>
+        +++ : 소스 코드 최적화, Trouble Shooting, 설계 및 기획, 리딩 가능<br/>
+    </p>
     <time datetime="{{ buildinfo.date }}" class="text-muted">Last update: {{ updated }}</time>
 </div>
+
+<!-- Modal -->
 </body>
 </html>

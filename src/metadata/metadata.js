@@ -3,7 +3,7 @@ module.exports = {
   title: '백엔드 · 프론트 · 데브옵스 엔지니어',
   facts: {
     'Email': '<a href="mailto:zlot1112@gmail.com">zlot1112@gmail.com</a>',
-    'Phone': '+82 10-6317-3488',
+    'Phone': '-',
   },
   channels: {
     'Github': `<a href="https://github.com/zlot1112">
@@ -47,15 +47,15 @@ module.exports = {
           contents:
             `
 * 관리자 웹페이지 개발  
-  - 대용량(100만건이상) Excel Download 속도개선 및 OOM 이슈 해결          
-  - MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)   
-  - AWS SDK 사용 보안개선(Access Key 방식 제거)
+  - _대용량(100만건이상) Excel Download 속도개선 및 OOM 이슈 해결_          
+  - _MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)_   
+  - _AWS SDK 사용 보안개선(Access Key 방식 제거)_
 * Lagacy 배포시스템 개선   
-  - CircleCI + AWS CodeDeploy CI/CD 설계 및 구축
-  - GIT flow 전략수립 및 적용
+  - _CircleCI + AWS CodeDeploy CI/CD 설계 및 구축_
+  - _GIT flow 전략수립 및 적용_
 * ElasticSearch + Logstash + Kibana 운영   
-  - ElasticSearch Java Search API 공통개발   
-  - ElasticSearch Index Lifecycle Management 정책 설계 
+  - _ElasticSearch Java Search API 공통개발_   
+  - _ElasticSearch Index Lifecycle Management 정책 설계_ 
             `
         }
       ],

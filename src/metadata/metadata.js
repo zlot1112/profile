@@ -265,6 +265,11 @@ module.exports = {
   ],
   cert: [
     {
+      date: '2022.03 ~ 2025.03',
+      name: 'CKS (Certified Kubernetes Security Specialist)',
+      major: 'linux foundation'
+    },
+    {
       date: '2022.01 ~ 2025.01',
       name: 'CKAD (Certified Kubernetes Application Developer)',
       major: 'linux foundation'

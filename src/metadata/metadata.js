@@ -49,13 +49,16 @@ module.exports = {
 * Lagacy 배포시스템 개선   
   - _CircleCI + AWS CodeDeploy CI/CD 설계 및 구축_
   - _GIT flow 전략수립 및 적용_
+  - _프로젝트 관리툴 적용 , Ant > Maven 
 * ElasticSearch + Logstash + Kibana 운영   
   - _ElasticSearch Java Search API 공통개발_   
   - _ElasticSearch Index Lifecycle Management 정책 설계_              
 * 관리자 웹페이지 개발  
   - _대용량(100만건이상) Excel Download 속도개선 및 OOM 이슈 해결_          
   - _MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)_   
-  - _AWS SDK 사용 보안개선(Access Key 방식 제거)_
+* Application 보안 개선
+  - _AWS SDK 사용 보안개선(Access Key 제거)_
+  - _AWS Secret Manager 적용_    
             `
         }
       ],

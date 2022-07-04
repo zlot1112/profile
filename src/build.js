@@ -41,7 +41,9 @@ const pdfHtml = pdfTemplate({
 fs.writeFileSync(outputDir + '/pdfindex.html', pdfHtml);
 
 buildPdf = async function (inputFile, outputFile) {
-  const browser = await Puppeteer.launch();
+  const browser = await Puppeteer.launch({
+    executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium',
+});
   const page = await browser.newPage();
   await page.goto(`file://${inputFile}`, {
     waitUntil: 'networkidle0'

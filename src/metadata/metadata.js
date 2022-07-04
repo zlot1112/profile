@@ -24,20 +24,51 @@ module.exports = {
     ['Python', '++'],
     ['vue.js', '++'],
     ['javascript', '++'],
-    ['terraform', '+'],
-    ['aws', '+'],
-    ['k8s', '+'],
+    ['aws', '++'],
+    ['k8s', '++'],
+    ['go', '++'],
+    ['kafka', '+'],
     ['elk', '+'],
+    ['terraform', '+'],
   ],
   plays: [
     {
+      title: '파스토',
+      date: '2021.05 ~ 현재',
+      written: 'NewFMS 팀/Manager',
+      projects: [
+        {
+          name: 'New FMS 개발',
+          date: '2021.05 ~ 현재 / Developer',
+          badges: {
+            backend: ['Go gin', 'Go'],
+            frontend: ['Javascript','vue.js'],
+            db: ['Mysql'],
+            etc: ['AWS' ,'git', 'Kafka', 'k8s']
+          },
+          contents:
+            `
+* 아키텍쳐 설계   
+  - _AWS + k8s(EKS) + istio + keycloak 아키텍처 설계_
+  - _Kafka(MSK)를 이용한 event driven 아키텍처 설계_              
+  - _GIT flow 전략수립 및 적용_ 
+* BackEnd 개발   
+  - _Go MSA 구조 설계 및 공통/ RestAPI 개발_   
+  - _Go Kafaka , Producer, Consumer 공통개발_
+* Data
+  - __
+            `
+        }
+      ],
+    },
+    {
       title: '베스핀글로벌',
-      date: '2021.01 ~ 현재',
+      date: '2021.01 ~ 2022.05',
       written: 'Devops 1팀/Manager',
       projects: [
         {
           name: '삼성전자 글로벌 권리지원 개발/운영',
-          date: '2021.01 ~ 현재 / PL',
+          date: '2021.01 ~ 2022.05(1년5개월) / PL',
           badges: {
             backend: ['Spring', 'Java'],
             frontend: ['Javascript','vue.js'],
@@ -58,8 +89,8 @@ module.exports = {
   - _MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)_   
 * Application 보안 개선
   - _AWS SDK 사용 보안개선(Access Key 제거)_
-  - _AWS Secret Manager 적용_    
-            `
+  - _AWS Secret Manager 적용_
+   `
         }
       ],
     },
@@ -70,7 +101,7 @@ module.exports = {
       projects: [
         {
           name: 'SK네트웍스 [민팃](https://www.mintit.co.kr/)+ SK텔링크 [바른폰](http://www.newstnt.com/news/articleView.html?idxno=40961) 통합 구축',
-          date: '2020.11 ~ 2020.12',
+          date: '2020.11 ~ 2020.12(2개월)',
           badges: {
             backend: ['Spring Boot', 'Java', 'Django', 'python'],
             frontend: ['Javascript','vue.js'],
@@ -86,7 +117,7 @@ module.exports = {
         },
         {
           name: 'SK텔레콤 DCB(휴대폰결제) 운영/개발',
-          date: '2020.03 ~ 2020.11',
+          date: '2020.03 ~ 2020.11(8개월)',
           badges: {
             backend: ['Spring Boot', 'Java'],
             frontend: ['Javascript','vue.js', 'x2framework'],
@@ -95,30 +126,15 @@ module.exports = {
           },
           contents:
             `
-- Google(주), Apple, Onestore 등 결제 REST API 운영/개발   
+- Google, Apple, Onestore 등 결제 REST API 운영/개발   
 - 신규 관리자 사이트 프로젝트 설계 및 개발   
 - 청구서/결제/SMS 등 레거시 연동 API 운영/개발   
 - 결제 일/월 대사 File 다운로드 배치 개발         
             `
         },
         {
-          name: 'SK텔링크 [바른폰](http://www.newstnt.com/news/articleView.html?idxno=40961) 운영/개발',
-          date: '2019.10 ~ 2020.03',
-          badges: {
-            backend: ['Spring Boot', 'Java', 'Django', 'python'],
-            frontend: ['Javascript','vue.js'],
-            db: ['PostgreSQL', 'Django ORM'],
-            etc: ['AWS', 'git', 'Nginx', 'Tomcat']
-          },
-          contents:
-            `
-- Front/ Backend 운영/개발   
-- Toss 중고폰 판매 API 및 웹페이지 연동/개발   
-            `
-        },
-        {
-          name: 'SK텔링크 [바른폰](http://www.newstnt.com/news/articleView.html?idxno=40961) 플랫폼 구축',
-          date: '2019.10 ~ 2020.03',
+          name: 'SK텔링크 [바른폰](http://www.newstnt.com/news/articleView.html?idxno=40961) 플랫폼 구축/운영  ',
+          date: '2019.06 ~ 2020.03(10개월)',
           badges: {
             backend: ['Spring Boot', 'Java', 'Django', 'python'],
             frontend: ['Javascript','vue.js'],
@@ -129,13 +145,14 @@ module.exports = {
             `
 - 이니시스 결제연동 설계/개발   
 - 중고폰 판매 프로세스 페이지 설계/개발   
-- Front/Backend 연동 API 개발   
-- Google 애널리틱스 연동/설계/개발         
+- Front/Backend 운영/개발 , 연동 API 개발   
+- Google 애널리틱스 연동/설계/개발
+- Front/ Backend   
             `
         },
         {
           name: 'SK텔레콤 5G T view for parking',
-          date: '2019.03 ~ 2019.05',
+          date: '2019.03 ~ 2019.05(3개월)',
           badges: {
             backend: [],
             frontend: ['Javascript' , 'Fabric.js'],
@@ -148,56 +165,12 @@ module.exports = {
             `
         },
         {
-          name: 'SK텔레콤 [T아이디 채널포탈](https://chp.skt-id.co.kr/) 고도화',
-          date: '2018.10 ~ 2019.02',
-          badges: {
-            backend: ['Spring boot', 'Java'],
-            frontend: ['Javascript' , 'Angular'],
-            db: ['Oracle', 'MyBatis'],
-            etc: ['git', 'Apache', 'Tomcat']
-          },
-          contents:
-            `
-- Front/Backend 채널연동 개발
-            `
-        },
-        {
-          name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) Monitoring System 개발',
-          date: '2018.04 ~ 2018.10',
-          badges: {
-            backend: ['Spring boot', 'Java'],
-            frontend: ['Javascript', 'JSP', 'Jquery'],
-            db: ['Oracle', 'MyBatis'],
-            etc: ['git', 'Apache', 'Tomcat']
-          },
-          contents:
-            `
-- Oracle OGG를 이용한 ETL 배치 설계/개발
-- 어플리케이션 모니터링 데몬 설계/개발      
-            `
-        },
-        {
-          name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) IMDG 데이터 검증 및 DB migration',
-          date: '2017.11 ~ 2018.03',
-          badges: {
-            backend: ['Spring', 'Java'],
-            frontend: [],
-            db: ['Oracle', 'MyBatis', 'IMDG'],
-            etc: ['git']
-          },
-          contents:
-            `
-- IMDG(In Memory Data grid) DB 데이터 정합성검증
-- IMDG -> Oracle DB migration 배치모듈 개발 및 무중단 배포      
-            `
-        },
-        {
           name: 'SK텔레콤 [T아이디](https://www.skt-id.co.kr) 운영/개발',
-          date: '2016.08 ~ 2017.10',
+          date: '2016.08 ~ 2019.02(2년 7개월)',
           badges: {
-            backend: ['Spring', 'Java'],
-            frontend: ['Javascript', 'JSP', 'Jquery'],
-            db: ['Oracle', 'MyBatis'],
+            backend: ['Spring', 'Spring boot',  'Java'],
+            frontend: ['Javascript', 'JSP', 'Jquery', ''],
+            db: ['Oracle', 'MyBatis', 'IMDG'],
             etc: ['Oauth2.0', 'git', 'Apache', 'Tomcat']
           },
           contents:
@@ -206,12 +179,15 @@ module.exports = {
 - OAuth2 기반 인증 API 운영  
 - 기간계 시스템 API 연동 개발  
 - 클릭 통계 설계/개발 
-- 개인정보 보호법 처리관련 Batch 설계/개발
-            `
+- 개인정보 보호법 처리관련 Batch 설계/개발 
+- Front/Backend 채널연동 개발 
+- IMDG(In Memory Data grid) DB migration(to Oracle) 데이터검증/배치모듈 개발
+- Application Monitoring System 개발(Oracle OGG를 이용한 ETL 배치 설계/개발)
+`
         },
         {
           name: '[크라우드펀딩](https://www.ycrowdy.com/) 사이트 구축',
-          date: '2015.10 ~ 2016.06',
+          date: '2015.10 ~ 2016.06(8개월)',
           badges: {
             backend: ['Spring', 'Java'],
             frontend: ['Javascript', 'JSP', 'Jquery'],
@@ -229,7 +205,7 @@ module.exports = {
     },
     {
       title: '포커스원',
-      date: '2010.09 ~ 2015.08',
+      date: '2010.09 ~ 2015.08(5년)',
       written: '운영개발팀/대리',
       projects: [
         {

@@ -18,15 +18,16 @@ module.exports = {
   skills: [
     ['Spring', '+++'],
     ['Java', '+++'],
+    ['go', '+++'],
     ['git', '+++'],
     ['CI/CD', '+++'],
     ['RDB', '+++'],
+    ['Python', '++'],
     ['Python', '++'],
     ['vue.js', '++'],
     ['javascript', '++'],
     ['aws', '++'],
     ['k8s', '++'],
-    ['go', '++'],
     ['kafka', '+'],
     ['elk', '+'],
     ['terraform', '+'],
@@ -35,26 +36,29 @@ module.exports = {
     {
       title: '파스토',
       date: '2021.05 ~ 현재',
-      written: 'NewFMS 팀/Manager',
+      written: 'Product 팀/PL',
       projects: [
         {
-          name: 'New FMS 개발',
-          date: '2021.05 ~ 현재 / Developer',
+          name: 'New Fulfillment Management System 개발',
+          date: '2021.05 ~ 현재 / PL',
           badges: {
             backend: ['Go gin', 'Go'],
             frontend: ['Javascript','vue.js'],
             db: ['Mysql'],
-            etc: ['AWS' ,'git', 'Kafka', 'k8s']
+            etc: ['AWS' ,'git', 'Kafka', 'k8s', 'grpc', 'ArgoCD', 'gitops', 'github actions']
           },
           contents:
             `
 * 아키텍쳐 설계   
   - _AWS + k8s(EKS) + istio + keycloak 아키텍처 설계_
   - _Kafka(MSK)를 이용한 event driven 아키텍처 설계_              
-  - _GIT flow 전략수립 및 적용_ 
+  - _GIT flow+ Github flow등을 사용한 커스텀 배포전략수립 및 적용_   
+  - _gRPC 아키텍처 설계_   
+  - _github actions + AWS ECR + ArgoCD CI/CD 아키텍처 설계_   
 * BackEnd 개발   
   - _Go MSA 구조 설계 및 공통/ RestAPI 개발_   
-  - _Go Kafaka , Producer, Consumer 공통개발_
+  - _Go gRPC , Server Client 공통개발_   
+  - _Go Kafaka , Producer, Consumer 공통개발_   
 * Data
   - __
             `

@@ -36,11 +36,11 @@ module.exports = {
     {
       title: '파스토',
       date: '2021.05 ~ 현재',
-      written: 'Product 팀/PL',
+      written: 'Devops 팀/Manager',
       projects: [
         {
           name: 'New Fulfillment Management System 개발',
-          date: '2021.05 ~ 현재 / PL',
+          date: '2021.05 ~ 현재 / Manager',
           badges: {
             backend: ['Go gin', 'Go'],
             frontend: ['Javascript','vue.js'],
@@ -55,6 +55,7 @@ module.exports = {
   - _GIT flow+ Github flow등을 사용한 커스텀 배포전략수립 및 적용_   
   - _gRPC 아키텍처 설계_   
   - _github actions + AWS ECR + ArgoCD CI/CD 아키텍처 설계_   
+  - _Prometheus + Grafana + Loki + Tempo + Promtail + Opentelemetry 모니터링 아키텍처 설계 적용_   
 * BackEnd 개발   
   - _Go MSA 구조 설계 및 공통/ RestAPI 개발_   
   - _Go gRPC , Server Client 공통개발_   

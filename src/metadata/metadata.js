@@ -3,7 +3,7 @@ module.exports = {
   title: '백엔드 · 프론트 · 데브옵스 엔지니어',
   facts: {
     'Email': '<a href="mailto:zlot1112@gmail.com">zlot1112@gmail.com</a>',
-    'Phone': '-',
+    'Phone': '01063173488',
   },
   channels: {
     'Github': `<a href="https://github.com/zlot1112">
@@ -40,10 +40,9 @@ module.exports = {
       projects: [
         {
           name: 'New Fulfillment Management System 개발',
-          date: '2021.05 ~ 현재 / Manager',
+          date: '2021.05 ~ 현재(6개월) / Manager',
           badges: {
             backend: ['Go gin', 'Go'],
-            frontend: ['Javascript','vue.js'],
             db: ['Mysql'],
             etc: ['AWS' ,'git', 'Kafka', 'k8s', 'grpc', 'ArgoCD', 'gitops', 'github actions']
           },
@@ -68,7 +67,7 @@ module.exports = {
     },
     {
       title: '베스핀글로벌',
-      date: '2021.01 ~ 2022.05',
+      date: '2021.01 ~ 2022.05(1년5개월)',
       written: 'Devops 1팀/Manager',
       projects: [
         {
@@ -85,7 +84,7 @@ module.exports = {
 * Lagacy 배포시스템 개선   
   - _CircleCI + AWS CodeDeploy CI/CD 설계 및 구축_
   - _GIT flow 전략수립 및 적용_
-  - _프로젝트 관리툴 적용 , Ant > Maven 
+  - _프로젝트 관리툴 적용 , Ant > Maven_ 
 * ElasticSearch + Logstash + Kibana 운영   
   - _ElasticSearch Java Search API 공통개발_   
   - _ElasticSearch Index Lifecycle Management 정책 설계_              
@@ -101,7 +100,7 @@ module.exports = {
     },
     {
       title: '크림솔루션',
-      date: '2015.10 ~ 2020.12',
+      date: '2015.10 ~ 2020.12(5년2개월)',
       written: 'SI&SM 사업부/과장',
       projects: [
         {
@@ -215,7 +214,7 @@ module.exports = {
       projects: [
         {
           name: 'SK그룹 [모바일 서비스 플랫폼](https://m.toktok.sk.com/) 운영/개발',
-          date: '2011.09  ~ 2015.08',
+          date: '2011.09  ~ 2015.08(5년)',
           badges: {
             backend: ['Spring', 'Java'],
             frontend: ['Javascript','Jsp', 'Jquery'],

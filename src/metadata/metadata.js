@@ -1,6 +1,6 @@
 module.exports = {
   name: '이진규',
-  title: '백엔드 · 프론트 · 데브옵스 엔지니어',
+  title: '백엔드 · 데브옵스 엔지니어',
   facts: {
     'Email': '<a href="mailto:zlot1112@gmail.com">zlot1112@gmail.com</a>',
     'Phone': '01063173488',

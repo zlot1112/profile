@@ -6,10 +6,6 @@ module.exports = {
     'Phone': '01063173488',
   },
   channels: {
-    'Github': `<a href="https://github.com/zlot1112">
-                  <span class="print">https://github.com/zlot1112</span>
-                  <span class="screen">https://github.com/zlot1112</span>
-                </a>`,
     'facebook': `<a href="https://facebook.com/leeggung">
                   <span class="print">https://facebook.com/leeggung</span>
                   <span class="screen">https://facebook.com/leeggung</span>
@@ -23,14 +19,13 @@ module.exports = {
     ['CI/CD', '+++'],
     ['RDB', '+++'],
     ['Python', '++'],
-    ['Python', '++'],
     ['vue.js', '++'],
     ['javascript', '++'],
     ['aws', '++'],
     ['k8s', '++'],
     ['kafka', '+'],
     ['elk', '+'],
-    ['terraform', '+'],
+    ['terraform', '++'],
   ],
   plays: [
     {
@@ -39,29 +34,31 @@ module.exports = {
       written: 'Devops 팀/Manager',
       projects: [
         {
-          name: 'New Fulfillment Management System 개발',
-          date: '2021.05 ~ 현재(6개월) / Manager',
+          name: '풀필먼트 Management System 개발/운영',
+          date: '2021.05 ~ 현재(11개월) / Manager',
           badges: {
             backend: ['Go gin', 'Go'],
-            db: ['Mysql'],
+            db: ['Mysql', 'DynamoDB'],
             etc: ['AWS' ,'git', 'Kafka', 'k8s', 'grpc', 'ArgoCD', 'gitops', 'github actions']
           },
           contents:
             `
-* 아키텍쳐 설계   
-  - _AWS + k8s(EKS) + istio + keycloak 아키텍처 설계_
-  - _Kafka(MSK)를 이용한 event driven 아키텍처 설계_              
-  - _GIT flow+ Github flow등을 사용한 커스텀 배포전략수립 및 적용_   
-  - _gRPC 아키텍처 설계_   
-  - _github actions + AWS ECR + ArgoCD CI/CD 아키텍처 설계_   
-  - _Prometheus + Grafana + Loki + Tempo + Promtail + Opentelemetry 모니터링 아키텍처 설계 적용_   
+* 아키텍쳐 설계/Devops  
+  - _AWS + k8s(EKS) + istio + keycloak 아키텍처 설계/구축_
+  - _Kafka(MSK)를 이용한 event driven 아키텍처 설계/구축_              
+  - _Github flow등을 사용한 커스텀 배포전략수립 및 구축_   
+  - _gRPC 아키텍처 설계/구축_   
+  - _github actions + AWS ECR + ArgoCD CI/CD 아키텍처 설계/구축(gitops)_   
+  - _Prometheus(thanos) + Grafana + Loki + Tempo + Promtail + Opentelemetry (Log,Metric,Trace)모니터링 아키텍처 설계/구축_   
 * BackEnd 개발   
-  - _Go MSA 구조 설계 및 공통/ RestAPI 개발_   
-  - _Go gRPC , Server Client 공통개발_   
-  - _Go Kafaka , Producer, Consumer 공통개발_   
-* Data
-  - __
-            `
+  - _Go MSA 구조 설계 및 공통/회원 RestAPI 개발_   
+  - _Go gRPC , Server 및 Client 공통개발_   
+  - _Go Kafka , Producer 및 Consumer 공통개발_
+  - _Go Devops Management RestAPI 개발(AWS Resource 탐색, Log관리 등)_
+* Devops
+  - _Terraform을 이용한, AWS Resource 프로비저닝 구조설계/개발(일부)_
+  - _Application Helm Chart 설계/개발_
+  `
         }
       ],
     },
@@ -76,15 +73,15 @@ module.exports = {
           badges: {
             backend: ['Spring', 'Java'],
             frontend: ['Javascript','vue.js'],
-            db: ['Mysql', 'Mybatis', 'ElasticSearch', 'Logstash', 'kibana'],
-            etc: ['AWS' ,'git', 'Tomcat', 'Nginx']
+            db: ['Mysql', 'Mybatis'],
+            etc: ['AWS' ,'git', 'Tomcat', 'Nginx', 'ElasticSearch', 'Logstash', 'kibana']
           },
           contents:
             `
 * Lagacy 배포시스템 개선   
   - _CircleCI + AWS CodeDeploy CI/CD 설계 및 구축_
   - _GIT flow 전략수립 및 적용_
-  - _프로젝트 관리툴 적용 , Ant > Maven_ 
+  - _프로젝트 관리툴 변경 , Ant > Maven_ 
 * ElasticSearch + Logstash + Kibana 운영   
   - _ElasticSearch Java Search API 공통개발_   
   - _ElasticSearch Index Lifecycle Management 정책 설계_              
@@ -93,7 +90,7 @@ module.exports = {
   - _MySQL SlowQuery 튜닝 및 Daily Batch 성능개선(30% 이상)_   
 * Application 보안 개선
   - _AWS SDK 사용 보안개선(Access Key 제거)_
-  - _AWS Secret Manager 적용_
+  - _AWS Secrets Manager 적용_
    `
         }
       ],
@@ -214,7 +211,7 @@ module.exports = {
       projects: [
         {
           name: 'SK그룹 [모바일 서비스 플랫폼](https://m.toktok.sk.com/) 운영/개발',
-          date: '2011.09  ~ 2015.08(5년)',
+          date: '2010.09  ~ 2015.08(5년)',
           badges: {
             backend: ['Spring', 'Java'],
             frontend: ['Javascript','Jsp', 'Jquery'],
@@ -248,12 +245,12 @@ module.exports = {
   ],
   cert: [
     {
-      date: '2022.03 ~ 2025.03',
+      date: '2022.03 ~ 2024.03',
       name: 'CKS (Certified Kubernetes Security Specialist)',
       major: 'linux foundation'
     },
     {
-      date: '2022.01 ~ 2025.01',
+      date: '2022.01 ~ 2025.02',
       name: 'CKAD (Certified Kubernetes Application Developer)',
       major: 'linux foundation'
     },

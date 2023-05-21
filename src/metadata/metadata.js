@@ -31,7 +31,7 @@ module.exports = {
     {
       title: '파스토',
       date: '2021.05 ~ 현재',
-      written: 'Devops 팀/Manager',
+      written: 'Devops 팀/Lead',
       projects: [
         {
           name: '풀필먼트 Management System 개발/운영',

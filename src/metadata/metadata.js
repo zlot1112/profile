@@ -35,7 +35,7 @@ module.exports = {
       projects: [
         {
           name: '풀필먼트 Management System 개발/운영',
-          date: '2021.05 ~ 현재(11개월) / Manager',
+          date: '2021.05 ~ 현재(11개월) / Lead',
           badges: {
             backend: ['Go gin', 'Go'],
             db: ['Mysql', 'DynamoDB'],

@@ -26,12 +26,12 @@ module.exports = {
   plays: [
     {
       title: '한샘',
-      date: '2023.08 ~ 현재(9개월)',
+      date: '2023.08 ~ 현재(1년 3개월)',
       written: '기간계시스템 개발팀/차장',
       projects: [
         {
           name: '기간계시스템 개발/운영',
-          date: '2023.08 ~ 현재(9개월) / PM',
+          date: '2023.08 ~ 현재(1년 3개월) / PM',
           badges: {
             backend: ['Spring', 'Java'],
             db: ['Sql Server'],
@@ -40,14 +40,14 @@ module.exports = {
           contents:
             `
 * 아키텍쳐 설계  
-  - _[On-prem] Prometheus + Grafana + Loki + Tempo + Promtail + Opentelemetry (Log,Metric,Trace)모니터링 아키텍처 설계/구축_ -> **전사확대적용**
+  - _[On-prem] Prometheus + Grafana + Loki + Tempo + Promtail + Opentelemetry (Log,Metric,Trace)모니터링 아키텍처 설계/구축_ -> **POC**
   - _[On-prem] Airflow 데이터 파이프라인 아키텍처 설계 및 구축_ -> **전사확대적용**
   - _Github + Jenkins + Nexus 등을 사용한 Tag 배포전략수립 및 구축_   
 * Application 개발   
-  - _ 레거시(java 6, struts2) 배치 현대화(with Airflow), Spring Batch 공통 개발/설계_
+  - _ 레거시(java 6, struts2) 배치 현대화(with Airflow), Spring Batch App 설계/개발(30개 이상, 50~70% 속도개선)_
   - _ Airflow Dag 공통 개발_
 * Devops
-  - _exporter(node,apache, ngnix, redis, otel 등) 메트릭을 활용한 대쉬보드 개발/제공_
+  - _exporter(node, apache, ngnix, redis, otel 등) 메트릭을 활용한 대쉬보드 개발/제공_
   - _알림 Application 개발_
   - _Trace, Log 등을 활용하여 API 통계 개발/제공_
   `
@@ -276,7 +276,7 @@ module.exports = {
       major: 'linux foundation'
     },
     {
-      date: '2021.11 ~ 2024.11',
+      date: '2021.11 ~ 2024.11(만료)',
       name: 'CKA (Certified Kubernetes Administrator)',
       major: 'linux foundation'
     },
@@ -286,7 +286,7 @@ module.exports = {
       major: 'linux foundation'
     },
     {
-      date: '2021.06 ~ 2024.06',
+      date: '2021.06 ~ 2024.06(만료)',
       name: 'AWS Certified Data Analytics - Specialty',
       major: 'AWS'
     },

@@ -1,6 +1,7 @@
 {
   "name": "cv-template",
   "description": "The Curriculum Vitae Template",
+  "chromePath": "/Applications/Chromium.app/Contents/MacOS/Chromium",
   "scripts": {
     "build": "node src/build.js",
     "watch": "chokidar '**/*' -i 'dist/**/*' -c 'npm run build'",

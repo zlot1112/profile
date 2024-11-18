@@ -13,6 +13,10 @@ jobs:
       with:
         node-version: '18.x'
     - uses: browser-actions/setup-chrome@v1
+    - run: |
+        echo "chromePath=${{ steps.setup-chrome.outputs.chrome-path }}" >> $GITHUB_ENV
+        jq --arg chromePath "${{ steps.setup-chrome.outputs.chrome-path }}" '.chromePath = $chromePath' package.json > temp.json && mv temp.json package.json
+
     - run: npm install
     - run: npm run build
     - name: Deploy

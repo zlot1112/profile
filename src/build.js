@@ -9,7 +9,7 @@ const username = require('git-username');
 
 const srcDir = __dirname;
 const outputDir = __dirname + '/../dist';
-
+const { chromePath } = require('../package.json');
 // Clear dist dir
 fs.emptyDirSync(outputDir);
 
@@ -42,7 +42,7 @@ fs.writeFileSync(outputDir + '/pdfindex.html', pdfHtml);
 
 buildPdf = async function (inputFile, outputFile) {
   const browser = await Puppeteer.launch({
-    executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium',
+    executablePath: chromePath,
   });
   const page = await browser.newPage();
   await page.goto(`file://${inputFile}`, {

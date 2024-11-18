@@ -2,7 +2,8 @@ const Puppeteer = require('puppeteer');
 
 module.exports = async function buildPdf(inputFile, outputFile) {
   const browser = await Puppeteer.launch({
-    ignoreDefaultArgs: ['--disable-extensions'],
+    ignoreDefaultArgs: ['--disable-extensions'],  headless: 'shell',
+    args: ['--enable-gpu'],
     executablePath: '/Applications/Chromium.app/Contents/MacOS/Chromium',
   });
   const page = await browser.newPage();

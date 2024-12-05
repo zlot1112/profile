@@ -4,8 +4,6 @@ on:
     branches:
       - master
 jobs:
-  permissions:
-    contents: write
   build:
     runs-on: macos-13
     steps:
